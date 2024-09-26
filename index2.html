@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicio Técnico & Venta de Equipos</title>
+    <link rel="stylesheet" href="styles2.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <div class="logo">
+            <img src="imagenes/LoGO IMPERIOTCNOLO.png" alt="Logo de la Empresa">
+            <h1 class="nombre-empresa">IMPERIO TECNOLOGICO AL</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li class="submenu">
+                    <a href="#servicios">Servicios</a>
+                </li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Inicio -->
+    <section id="inicio" class="contenedor">
+        <h1>Bienvenidos a Nuestro Servicio Técnico</h1>
+        <p>Ofrecemos soluciones completas para tus necesidades tecnológicas. Desde la reparación de computadoras hasta la instalación de redes, estamos aquí para ayudarte.</p>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="contenedor">
+        <h2>Nuestros Servicios</h2>
+        <div class="grid">
+            <div class="grid">
+                <!-- Servicio 1 -->
+                <div class="card">
+                    <img src="imagenes/reparacion1.jpeg" alt="Reparación de Computadoras">
+                    <div class="card-content">
+                        <h3>Reparación de Computadoras</h3>
+                        <p>Resolución de problemas de hardware y software.</p>
+                        <button onclick="abrirModal('reparacionModal')">Más información</button>
+                    </div>
+                </div>
+                <!-- Servicio 2 -->
+                <div class="card">
+                    <img src="imagenes/crear-pagina.webp" alt="Creacion de Paginas">
+                    <div class="card-content">
+                        <h3>Creacion de Paginas</h3>
+                        <p>Configuración de sistemas y programas específicos.</p>
+                        <button onclick="abrirModal('instalacionModal')">Más información</button>
+                    </div>
+                </div>
+                <!-- Servicio 3 -->
+                <div class="card">
+                    <img src="imagenes/venta1.png" alt="Venta de Equipos">
+                    <div class="card-content">
+                        <h3>Venta de Equipos</h3>
+                        <p>Configuración y mantenimiento para conectividad estable.</p>
+                        <button onclick="abrirModal('mantenimientoModal')">Más información</button>
+                    </div>
+                </div>
+                <!-- Nuevo Servicio 4 -->
+                <div class="card">
+                    <img src="imagenes/optimizacion.jpg" alt="Optimización del Sistema">
+                    <div class="card-content">
+                        <h3>Optimización del Sistema</h3>
+                        <p>Mejoramos el rendimiento de tu equipo eliminando archivos innecesarios y ajustes avanzados.</p>
+                        <button onclick="abrirModal('optimizacionModal')">Más información</button>
+                    </div>
+                </div>
+                <!-- Nuevo Servicio 5 -->
+                <div class="card">
+                    <img src="imagenes/asesoria.jpg" alt="Asesoría Técnica">
+                    <div class="card-content">
+                        <h3>Asesoría Técnica</h3>
+                        <p>Te ayudamos a elegir el mejor equipo y configuración para tus necesidades.</p>
+                        <button onclick="abrirModal('asesoriaModal')">Más información</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+   <!-- Sección de Contacto y Ubicación -->
+   <section id="contacto-ubicacion" class="contenedor">
+    <div id="contacto-ubicacion">
+        <div class="contacto">
+            <h2>Contacto</h2>
+            <p><strong>Nombre de la Empresa:</strong> IMPERIO TECNOLOGICOAL</p>
+            <p><strong>Teléfono:</strong> +57 3137825372</p>
+            <p><strong>Correo Electrónico:</strong> imperiotecnologicoal@gmail.com</p>
+            <p><strong>ubicacion</strong> Popayan - Colombia</p>
+            <a href="https://web.whatsapp.com/" class="boton-llamada">Llamar</a>
+        </div>
+        <div class="ubicacion">
+            <h2>Ubicación</h2>
+            <p><strong>Dirección:</strong> barrio villa del norte </p>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509108!2d144.95373531567755!3d-37.81627997975164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f8f9b15%3A0x5045675218ceed0!2sCalle%20Ejemplo%20123%2C%20Ciudad%2C%20Pa%C3%ADs!5e0!3m2!1ses!2ses!4v1614321234567" 
+                        width="100%" height="200" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Modales para cada servicio -->
+    <div id="reparacionModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal('reparacionModal')">&times;</span>
+            <h2>Reparación de Computadoras</h2>
+            <p>Ofrecemos un servicio completo de reparación de computadoras. Solucionamos problemas de hardware y software, optimización del sistema, limpieza de virus y más.</p>
+        </div>
+    </div>
+
+    <div id="instalacionModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal('instalacionModal')">&times;</span>
+            <h2>Creacion de Ppaginas</h2>
+            <p>paginas con diferentes entornos comerciales y lenguajes de programacion,tambien hosting y dominios </p>
+        </div>
+    </div>
+
+    <div id="mantenimientoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal('mantenimientoModal')">&times;</span>
+            <h2>Venta de Equipos</h2>
+            <p>venta portatiles y torres:gama basicos, gama media y gama alta "gaming". monitores , accesorios teclados maouse y mucho mas.. </p>
+        </div>
+    </div>
+    
+    <!-- Modal para Optimización -->
+<div id="optimizacionModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="cerrarModal('optimizacionModal')">&times;</span>
+        <h2>Optimización de Sistemas</h2>
+        <p>Detalles sobre cómo optimizamos sistemas para mejorar su rendimiento y eficiencia.</p>
+    </div>
+</div>
+
+<!-- Modal para Asesoría -->
+<div id="asesoriaModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="cerrarModal('asesoriaModal')">&times;</span>
+        <h2>Asesoría Técnica</h2>
+        <p>Detalles sobre cómo brindamos asesoría técnica en la implementación y uso de sistemas tecnológicos.</p>
+    </div>
+</div>
+
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Nombre de la Empresa. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
